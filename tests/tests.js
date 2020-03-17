@@ -5,7 +5,7 @@ export const tests = [{
     const headerTitle = document.querySelector('.exercise-header').textContent;
     return document.title !== defaultTitle && headerTitle !== defaultTitle;
   },
-  hint: 'Zmień nazwę strony nie tylko w headerze oraz w tytule karty.'
+  hint: 'Zmień nazwę strony nie tylko w headerze, ale też w tytule karty.'
 }, {
   name: 'Kolory headera i buttona zostały zmienione.',
   isCorrect: () => {
