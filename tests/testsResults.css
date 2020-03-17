@@ -1,0 +1,7 @@
+.tests-results .test-invalid .test-name {
+  color: red;
+}
+
+.tests-results :not(.test-invalid) .test-name {
+  color: green;
+}

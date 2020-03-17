@@ -1,7 +1,7 @@
 // Import stylesheets
 import './style.css';
 
-import './tests/tests.js';
+import './tests/testsRunner.js';
 
 // Write Javascript code!
 // const appDiv = document.getElementById('app');
