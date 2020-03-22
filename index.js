@@ -1,25 +1,54 @@
-// Import stylesheets
 import './style.css';
-
 import './tests/testsRunner.js';
 
-// Write Javascript code!
-// const appDiv = document.getElementById('app');
-// appDiv.innerHTML = `<h1>JS Starter</h1>`;
-
-console.log(document);
 const submitBtn = document.querySelector('.submit-btn').addEventListener('click', submit);
 
-function submit() {
-  sendRequest().then((val) => {
-    console.log(val);
-  });
+function getValues() {
+  // Funkcja do uzupełnienia
+  return {
+    first_name: '',
+    last_name: '',
+    email: '',
+    interests: '',
+  }
 }
 
-async function sendRequest() {
+function getValuesValidity(values) {
+  // Funkcja do uzupełnienia
+  return {
+    first_name: false,
+    last_name: false,
+    email: false,
+    interests: false,
+  }
+}
+
+function allValuesValid(valuesValidity) {
+  // Funkcja do uzupełnienia
+  return false;
+}
+
+function markInvalidFields(valuesValidity) {
+  // Funkcja do uzupełnienia
+}
+
+function submit() {
+  const values = getValues();
+
+  const valuesValidity = getValuesValidity(values);
+  if (!allValuesValid(valuesValidity)) {
+    markInvalidFields(valuesValidity);
+    return;
+  }
+
+  sendRequest(values).then((response) => {});
+}
+
+async function sendRequest(values) {
   const url = 'https://girls-js-exercise-1.free.beeceptor.com/';
   const response = await fetch(url, {
     method: 'POST',
+    body: JSON.stringify(values)
   });
   return await response.json();
 }
