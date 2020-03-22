@@ -24,7 +24,8 @@ Najładniejsze kolory są wtedy, kiedy są wybrane według jakiegoś konkretnego
 3. Duże pole tekstowe oznaczone "Your interests" można rozszerzać i zmniejszać chwytając i przesuwając prawy dolny róg. To niewygląda najlepiej i raczej nie chcemy tego umożliwiać użytkownikowi. Zablokuj to :)
 4. Z jakiegoś dziwnego powodu, na moim Macu, pierwsze trzy pola tekstowe mają różne kolory obwódki, niż czwarty. Może nie używacie Macbooka, ale gdy tworzycie stronę internetową, ważne jest, żeby ona wyglądała dobrze na każdej przeglądarce. Ustawcie jakiś kolor bordera dla wszystkich pól tekstowych.
 Wygląd różnych statycznych stron na różnych przeglądarkach możecie sprawdzić tutaj: https://comparium.app/
-5. 
+5. Zrób walidację pól formularza. Jeśli jakieś pole jest puste lub email ma inną formę niż nazwa@strona.domena, to pole jest niepoprawne. Po naciśnięciu submit, niech pola niepoprawne oznaczą się na czerwono i pojawi się w labelce, pod inputem czerwonym tekstem, że pole jest niepoprawne.
+6. Wyślij requesta...
 
 # Uwagi
 

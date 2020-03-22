@@ -1,3 +1,15 @@
+.test {
+  margin: 10px 0;
+}
+
+.test-hint button {
+  display: block
+}
+
+.test-hint {
+  font-size: 14px;
+}
+
 .tests-results .test-invalid .test-name {
   color: red;
 }

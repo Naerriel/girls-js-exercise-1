@@ -8,13 +8,14 @@ function getTestsResultsElement() {
     element.parentNode.removeChild(element);
   }
 
-  const newElement = document.createElement('ul');
+  const newElement = document.createElement('ol');
   newElement.classList.add(className);
   return newElement;
 }
 
 function getHintElement(content) {
   const hint = document.createElement('div');
+  hint.classList.add('test-hint');
   const showHintButton = document.createElement('button');
   const hintContent = document.createTextNode(content);
 
@@ -29,6 +30,7 @@ function getHintElement(content) {
 
 function getTestElement(test) {
   const testResult = document.createElement('li');
+  testResult.classList.add('test');
   const name = document.createElement('span');
   name.classList.add('test-name')
   name.innerText = test.name;
