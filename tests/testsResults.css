@@ -10,6 +10,10 @@
   font-size: 14px;
 }
 
+.tests-results {
+  list-style: none;
+}
+
 .tests-results .test-invalid .test-name {
   color: red;
 }

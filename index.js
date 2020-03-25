@@ -28,7 +28,7 @@ function allValuesValid(valuesValidity) {
   return false;
 }
 
-function markInvalidFields(valuesValidity) {
+function changeBordersOnValidity(valuesValidity) {
   // Funkcja do uzupełnienia
 }
 
@@ -36,8 +36,8 @@ function submit() {
   const values = getValues();
 
   const valuesValidity = getValuesValidity(values);
+  changeBordersOnValidity(valuesValidity);
   if (!allValuesValid(valuesValidity)) {
-    markInvalidFields(valuesValidity);
     return;
   }
 

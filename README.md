@@ -8,7 +8,7 @@ Celem tego zadania jest poprawienie formularza - dodanie do niego paru brakując
 Rzeczy do zrobienia są opisane poniżej.
 Kiedy zrobisz jakąś rzecz, możesz nacisnąć przycisk "Sprawdź zadanie", aby zobaczyć swoje postępy i sprawdzić, czy zrobiłaś podpunkt dobrze
 (albo przynajmniej według przewiedzianych przeze mnie rozwiązań :D).
-Jeśli nie będziesz mogła wymyśleć, jak to zadanie zrobić, możesz nacisnąć przycisk "Podpowiedź", żeby usłyszeć podpowiedź.
+Jeśli nie będziesz mogła wymyśleć, jak to zadanie zrobić, możesz nacisnąć przycisk "Podpowiedź", żeby zobaczyć podpowiedź.
 
 Kiedy skończysz lub już nie będziesz mogła tego zadania dokończyć, wyślij linka do swojego rozwiązania na Facebooku. Tam wszyscy chętnie Ci pomogą i jeśli zechcesz, powiedzą Ci jak możesz poprawić swój kod, aby wyglądał ładnie.
 
@@ -24,14 +24,15 @@ Najładniejsze kolory są wtedy, kiedy są wybrane według jakiegoś konkretnego
 3. Duże pole tekstowe oznaczone "Your interests" można rozszerzać i zmniejszać chwytając i przesuwając prawy dolny róg. To niewygląda najlepiej i raczej nie chcemy tego umożliwiać użytkownikowi. Zablokuj to :)
 4. Z jakiegoś dziwnego powodu, na moim Macu, pierwsze trzy pola tekstowe mają różne kolory obwódki, niż czwarty. Może nie używacie Macbooka, ale gdy tworzycie stronę internetową, ważne jest, żeby ona wyglądała dobrze na każdej przeglądarce. Ustawcie jakiś kolor bordera dla wszystkich pól tekstowych.
 Wygląd różnych statycznych stron na różnych przeglądarkach możecie sprawdzić tutaj: https://comparium.app/
-5. Zrób walidację formularza. Po naciśnięciu "Submit", niech pola oznaczone gwiazdką (*), które nie mają wartości, niech podświetlą się na czerwono i niech pojawi się pod nimi komunikat, że pole nie może być puste. 
-Jeśli email ma format inny, niż nazwa@strona.domena, np. nie posiada '@', albo nazwy przed '@' lub domeny po '.', niech też zostanie oznaczony jako niepoprawny i pojawi się o tym komunikat.
+5. Zrób walidację formularza. Po naciśnięciu "Submit", niech niepoprawne pola zyskają czerwoną obwódkę. Pole jest niepoprawne, jeśli jest oznaczone gwiazdką (*) i nie ma wartości, oraz kiedy pole jest typu email i ma inny format, niż nazwa@strona.domena, czyli nie posiada '@', 
+nazwy przed '@', nazwy strony przed '.' lub domeny po '.'.
 Użyj do tego rozpoczętych funkcji z pliku 'index.js' oznaczonych jako "Funkcja do uzupełnienia".
+Po ponownym naciśnięciu "Submit", niech czerwone pola powrócą do poprzedniego koloru.
+6. Po naciśnięciu submit wyślij treść formularza funkcją "sendRequest" i wyświetl komunikat na stronie :)
 
+# Zapisywanie
 
-5. Zrób walidację pól formularza. Jeśli jakieś pole jest puste lub email ma inną formę niż nazwa@strona.domena, to pole jest niepoprawne. Po naciśnięciu submit, niech pola niepoprawne oznaczą się na czerwono i pojawi się w labelce, pod inputem czerwonym tekstem, że pole jest niepoprawne.
-6. Wyślij requesta...
+Żeby zapisać rozwiązanie, należy nacisnąć niebieki przycisk Fork, w headerze strony i się zalogować. Potem trzeba naciskać "Save" lub Ctrl + S.
 
 # Uwagi
-
- Nie zmieniajcie nazw klas, ponieważ wtedy testy przestaną działać :)
+ Nie zmieniajcie nazw klas, ponieważ wtedy niektóre testy przestaną działać :)

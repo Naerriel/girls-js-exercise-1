@@ -8,7 +8,7 @@ function getTestsResultsElement() {
     element.parentNode.removeChild(element);
   }
 
-  const newElement = document.createElement('ol');
+  const newElement = document.createElement('ul');
   newElement.classList.add(className);
   return newElement;
 }
