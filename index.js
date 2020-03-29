@@ -1,8 +1,6 @@
 import './style.css';
 import './tests/testsRunner.js';
 
-const submitBtn = document.querySelector('.submit-btn').addEventListener('click', submit);
-
 function getValues() {
   // Funkcja do uzupełnienia
   return {
@@ -32,6 +30,12 @@ function changeBordersOnValidity(valuesValidity) {
   // Funkcja do uzupełnienia
 }
 
+/**
+ * NIE EDYTUJ NICZEGO W PONIŻSZEJ SEKCJI, PROSZĘ! :-)
+ */
+
+const submitBtn = document.querySelector('.submit-btn').addEventListener('click', submit);
+
 function submit() {
   const values = getValues();
 
@@ -52,3 +56,5 @@ async function sendRequest(values) {
   });
   return await response.json();
 }
+
+/***********************************************************************/
